@@ -1,0 +1,88 @@
+.app {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  align-items: center;
+  gap: 1rem;
+}
+
+.header img {
+  width: 13rem;
+  border-radius: 50%;
+  border: 3px solid #BB99DD;
+  padding: 0.5rem;
+}
+
+.header div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  align-items: center;
+}
+
+
+.main {
+  width: 400px;
+  margin: 0 auto;
+
+  margin-top: 1rem;
+}
+
+.main div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.main a {
+  border: 2px solid #bb9ddd;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.main a h2 {
+  padding: 0.7rem;
+}
+
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo,
+  .thirteen img {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
